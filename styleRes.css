@@ -87,6 +87,9 @@ h3{
 	color: #2c3e50;
 	margin-top: 2%;
 }
+.login{
+	display: none;
+}
 
 @media (min-width: 640px){
 	.caja{
@@ -170,7 +173,7 @@ h3{
 	}
 	.info{
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 25vh;
+		grid-template-rows: 40vh;
 		margin-top: 10%;
 	}
 }
