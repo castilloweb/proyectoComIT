@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script type="text/javascript" src="./script.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Bangers|Julius+Sans+One|Pontano+Sans|Varela+Round" rel="stylesheet">
 	<title>Tu Camping</title>
 	<meta charset="utf-8">
@@ -9,13 +10,13 @@
 </head>
 <body>
 	<header>
-		<img class="logoPrincipal" src="./img/tucamping.png">
-		<input type="image" class="botonImagen" src="./img/menu-1.png">	
+		<img class="logoPrincipal" src="./img/logocasero.png">
+		<input type="image" id="botonImagen" src="./img/menu-1.png">	
 		</header>
 	<section>
 		<div class="caja centrado">
 			<h1 >
-			Encuentra el mejor camping
+			Encuentra donde acampar
 			</h1>
 			<form>
 				<input id="buscador" type="text" name="destino" placeholder="ej: San Luis">
@@ -24,15 +25,22 @@
 		</div>
 	</section>
 	<section class="info">
-		<div><img class="logos" src="./img/map-location.png"><h2 class="descripcion">Busca campings en todo el país. Organizados por provincia o ciudad que elijas como destino.</h2></div>
-		<div><img class="logos" src="./img/cabin.png"><h2 class="descripcion">Filtra resultados segun tus preferencias. Quieres un lugar que permita trailers? o que tengan duchas con agua caliente? wi fi? que dejen entrar mascotas?</h2></div>
-		<div ><img class="logos" src="./img/like.png"><h2 class="descripcion">Califica los campings y marca tus favoritos. Puedes dejar tu opinion y contarnos tus experiencias de viajero, como tambien leer las reseñas de otros visitantes.</h2></div>
-		<div><img class="logos" src="./img/picture.png"><h2 class="descripcion">Visita la galería de imagenes y echa un vistazo a tu próximo destino.</h2></div>
+		<div><img class="logos" src="./img/map-location.png"><h2 class="descripcion goodFont">Busca campings en todo el país. Organizados por provincia o ciudad que elijas como destino.</h2></div>
+		<div><img class="logos" src="./img/cabin.png"><h2 class="descripcion goodFont">Filtra resultados segun tus preferencias. Quieres un lugar que permita trailers? o que tengan duchas con agua caliente? wi fi? que dejen entrar mascotas?</h2></div>
+		<div ><img class="logos" src="./img/like.png"><h2 class="descripcion goodFont">Califica los campings y marca tus favoritos. Puedes dejar tu opinion y contarnos tus experiencias de viajero, como tambien leer las reseñas de otros visitantes.</h2></div>
+		<div><img class="logos" src="./img/picture.png"><h2 class="descripcion goodFont">Visita la galería de imagenes y echa un vistazo a tu próximo destino.</h2></div>
 	</section>
 	<div>
-		<form class="login">
-			<input type="text" name="Usuario o e-mail" placeholder="ej: mimail@gmail.com">
-			<input type="password" name="contraseña" placeholder="password">
+		<form id="menu" class="hidden">
+			<p class="tituloLogin centerText goodFont">Login</p>
+			
+			<input type="image" id="close" src="./img/error.png"> <hr>
+			<input class="input" type="text" name="Usuario o e-mail" placeholder="ej: mimail@gmail.com">
+			<br>
+			<input class="input" type="password" name="contraseña" placeholder="password">
+			<input class="buttonStyle goodFont buttonSubmit" type="submit" value="Ingresar">
+			
+			<input  id="inputFB" type="image" src="./img/loginFB.png">
 		</form>
 	</div>
 	<footer>
